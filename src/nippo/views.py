@@ -21,4 +21,5 @@ def nippoCreateView(request):
         title = request.POST.get('title')
         content = request.POST.get('content')
         print(title)
+        print(content)
     return render(request, template_name)
