@@ -3,5 +3,5 @@ from .views import nippoListView, nippoDetailView # .は同じディレクトリ
  
 urlpatterns = [
     path("", nippoListView), # views.pyでつくった関数名 ''で親のnippo/
-    path('detail/', nippoDetailView)
+    path('detail/<int:number>/', nippoDetailView)
 ]
